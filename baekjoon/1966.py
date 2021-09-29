@@ -29,7 +29,7 @@ def solution(queue, M):
         queue = dequeSlice(queue, idx, len(queue)) + dequeSlice(queue, 0, idx)
         queue.popleft()
         if idx > M:
-            M = len(queue) - idx + M
+            M = M + len(queue) - idx
         else:
             M = M - idx - 1
         count += 1
