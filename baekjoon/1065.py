@@ -10,9 +10,11 @@ def isArithmetic(n):
             return False
     return True
 
-
+'''
 result = [0]
 [result.append(i) for i in range(1, 100)]
+'''
+result = [val for val in range(100)]
 
 for i in range(100, 1001):
     val = result[-1]
