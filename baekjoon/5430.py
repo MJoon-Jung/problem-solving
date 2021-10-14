@@ -1,7 +1,7 @@
 import collections
 
 
-def printing(X: collections.deque(), status):
+def printing(X, status):
     result = '['
     if status:
         for i in range(len(X) - 1, -1, -1):
@@ -11,14 +11,14 @@ def printing(X: collections.deque(), status):
     else:
         for i, val in enumerate(X):
             result += str(val)
-            if i != len(X)-1:
+            if i != len(X) - 1:
                 result += ','
 
     result += ']'
     return result
 
 
-def solution(queue: collections.deque(), X: collections.deque()):
+def solution(queue, X):
     status = False
     for val in queue:
         if val == 'R':

@@ -9,7 +9,8 @@ while True:
         if v == '.':
             break
         if v in pattern:
-            if stack and stack[-1]:
+            if stack:
+            # if stack and stack[-1]:
                 if (stack[-1] == pattern[0] and v == pattern[1]) or (stack[-1] == pattern[2] and v == pattern[3]):
                     stack.pop()
                     continue
