@@ -4,7 +4,7 @@ a = [i for i in range(max_len)]
 a[1] = 0
 for i in range(2, len(a)):
     if a[i] != 0:
-        for j in range(i+i, max_len, i):
+        for j in range(i + i, max_len, i):
             a[j] = 0
 
 good = False
