@@ -26,7 +26,6 @@ def dfs(x, y, wall):
 def bfs(x, y, wall):
     queue = deque()
     queue.append((x, y))
-    wall[x][y] = 2
     while queue:
         x, y = queue.popleft()
         for i in range(4):
